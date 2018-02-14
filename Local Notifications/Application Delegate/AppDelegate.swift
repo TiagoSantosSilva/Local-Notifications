@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let rootViewController = RootViewController()
+        window?.rootViewController = rootViewController
+        window?.makeKeyAndVisible()
+        window?.tintColor = UIColor.green
+        
         return true
     }
 
@@ -41,6 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        if shortcutItem.type == "Tiago-Santos.Local-Notifications.postImage" {
+            print("Post Image")
+        }
+    }
 
 }
 

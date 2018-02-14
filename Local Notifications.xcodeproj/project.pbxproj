@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2708B5C020346145009E8A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708B5BF20346145009E8A01 /* AppDelegate.swift */; };
-		2708B5C220346145009E8A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708B5C120346145009E8A01 /* ViewController.swift */; };
-		2708B5C520346145009E8A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2708B5C320346145009E8A01 /* Main.storyboard */; };
 		2708B5C720346145009E8A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2708B5C620346145009E8A01 /* Assets.xcassets */; };
 		2708B5CA20346145009E8A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2708B5C820346145009E8A01 /* LaunchScreen.storyboard */; };
+		2708B5D52034616F009E8A01 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708B5D32034616F009E8A01 /* RootViewController.swift */; };
+		2708B5D62034616F009E8A01 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2708B5D42034616F009E8A01 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2708B5BC20346145009E8A01 /* Local Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Local Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2708B5BF20346145009E8A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2708B5C120346145009E8A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2708B5C420346145009E8A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2708B5C620346145009E8A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2708B5C920346145009E8A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2708B5CB20346145009E8A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2708B5D32034616F009E8A01 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2708B5D42034616F009E8A01 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,54 @@
 		2708B5BE20346145009E8A01 /* Local Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				2708B5BF20346145009E8A01 /* AppDelegate.swift */,
-				2708B5C120346145009E8A01 /* ViewController.swift */,
-				2708B5C320346145009E8A01 /* Main.storyboard */,
-				2708B5C620346145009E8A01 /* Assets.xcassets */,
-				2708B5C820346145009E8A01 /* LaunchScreen.storyboard */,
-				2708B5CB20346145009E8A01 /* Info.plist */,
+				2708B5DB20346241009E8A01 /* Supporting Files */,
+				2708B5DA20346233009E8A01 /* View Controllers */,
+				2708B5D92034622B009E8A01 /* Storyboards */,
+				2708B5D820346227009E8A01 /* Resources */,
+				2708B5D720346221009E8A01 /* Application Delegate */,
 			);
 			path = "Local Notifications";
+			sourceTree = "<group>";
+		};
+		2708B5D720346221009E8A01 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2708B5BF20346145009E8A01 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		2708B5D820346227009E8A01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2708B5C620346145009E8A01 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2708B5D92034622B009E8A01 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2708B5C820346145009E8A01 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2708B5DA20346233009E8A01 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2708B5D42034616F009E8A01 /* RootViewController.xib */,
+				2708B5D32034616F009E8A01 /* RootViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2708B5DB20346241009E8A01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2708B5CB20346145009E8A01 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +165,7 @@
 			files = (
 				2708B5CA20346145009E8A01 /* LaunchScreen.storyboard in Resources */,
 				2708B5C720346145009E8A01 /* Assets.xcassets in Resources */,
-				2708B5C520346145009E8A01 /* Main.storyboard in Resources */,
+				2708B5D62034616F009E8A01 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2708B5C220346145009E8A01 /* ViewController.swift in Sources */,
+				2708B5D52034616F009E8A01 /* RootViewController.swift in Sources */,
 				2708B5C020346145009E8A01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +184,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2708B5C320346145009E8A01 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2708B5C420346145009E8A01 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2708B5C820346145009E8A01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64E8842TP6;
-				INFOPLIST_FILE = "Local Notifications/Info.plist";
+				INFOPLIST_FILE = "Local Notifications/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tiago-Santos.Local-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64E8842TP6;
-				INFOPLIST_FILE = "Local Notifications/Info.plist";
+				INFOPLIST_FILE = "Local Notifications/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tiago-Santos.Local-Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
